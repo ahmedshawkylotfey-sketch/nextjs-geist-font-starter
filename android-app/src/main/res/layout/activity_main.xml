@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VF-Cash Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp" />
+
+    <!-- Limits Status Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limits Status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/limits_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading limits..."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/sync_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sync to Dashboard"
+            android:textColor="#ffffff"
+            android:background="#4CAF50"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/edit_limits_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Limits"
+            android:textColor="#ffffff"
+            android:background="#2196F3"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- Secondary Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:background="#FF9800"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/test_connection_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Test Connection"
+            android:textColor="#ffffff"
+            android:background="#9C27B0"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- Transactions Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Transactions List -->
+    <ListView
+        android:id="@+id/transactions_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+        android:elevation="2dp" />
+
+</LinearLayout>
